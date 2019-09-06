@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "tslint-sonarts",
+    "tslint-config-airbnb"
+  ],
+  "rulesDirectory": [
+    "node_modules/tslint-origin-ordered-imports-rule/dist"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/node_modules/**",
+      "**/dist/**"
+    ]
+  }
+}
