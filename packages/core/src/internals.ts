@@ -1,8 +1,6 @@
-import { LoganLogLevel, LoganConsoleMethod, LoganConfig } from './types';
-
-const isNode = typeof process !== 'undefined' && typeof global !== 'undefined';
-const isBrowser = typeof window !== 'undefined';
-const nativeConsole = (isNode && global.console) || window.console;
+import { LoganLogLevel } from './types';
+import { getNativeConsole } from './config';
+import { isEmptyString, formatError, isNode } from './utils';
 
 const logLevelValues = {
   log: 20,
@@ -16,7 +14,7 @@ const logLevelValues = {
  * This should be stored internally and shouldn't be exposed
  * to the developer
  */
-let globalTitle = isNode ? '' : window.name;
+let globalTitle = isNode() ? '' : window.name;
 
 /**
  * @internal
@@ -26,42 +24,28 @@ export function setGlobalTitle(title: string): void {
 }
 
 /**
+ * 
  * @internal
  */
-export function getLogLevel({ ignoreLogLevel, logLevel }: LoganConfig = {}): LoganLogLevel {
-  if (ignoreLogLevel) {
-    return 'debug';
-  }
-
-  if (logLevel) {
-    return logLevel;
-  }
-
-  const nodeLogLevel = isNode && process.env.LOG_LEVEL;
-  // It's safer to type cast to `any` than augmenting
-  // global `Window` interface
-  const browserLogLevel = isBrowser && (window as any).config && (window as any).config.logLevel;
-  return nodeLogLevel || browserLogLevel || 'debug';
-}
-
-/**
- * @internal
- */
-export function createConsoleMethod(
-  method: LoganConsoleMethod,
+export function createLoganFactory(
+  method: LoganLogLevel,
   title: string,
-  logLevel: LoganLogLevel
+  logLevel: LoganLogLevel,
+  console: Console | undefined
 ) {
   if (logLevelValues[method] < logLevelValues[logLevel]) {
     return () => {};
   }
 
   return (...params: any[]) => {
-    const digestedParams: any[] = [getTitle(title)];
+    const nativeConsole = getNativeConsole(console);
+    const digestedParams: [string, ...any[]] = [getTitle(title)];
     for (const param of params) {
       digestedParams.push(formatError(param));
     }
-    nativeConsole[method](digestedParams);
+    // This should be used with `apply` instead of direct invokation
+    // like `nativeConsole[method](digestedParams)` as it will print array
+    nativeConsole[method].apply(nativeConsole, digestedParams);
   };
 }
 
@@ -78,29 +62,4 @@ export function getTitle(title: string): string {
   }
 
   return title;
-}
-
-/**
- * @internal
- */
-function isEmptyString(target: unknown): boolean {
-  return typeof target === 'string' && !target.trim().length;
-}
-
-/**
- * @internal
- */
-function formatError(error: unknown): unknown {
-  if (!(error instanceof Error)) {
-    return error;
-  }
-
-  if (error.stack) {
-    error =
-      error.message && error.stack.indexOf(error.message) === -1
-        ? `Error: ${error.message}\n${error.stack}`
-        : error.stack;
-  }
-
-  return error;
 }

@@ -1,12 +1,14 @@
-export type LoganLogLevel = keyof Pick<Console, 'log' | 'debug' | 'info' | 'warn' | 'error'>;
-/**
- * This type is not semantically same as `LoganLogLevel`
- * @internal
- */
-export type LoganConsoleMethod = LoganLogLevel;
+export const enum LoganLogLevel {
+  Log = 'log',
+  Info = 'info',
+  Warn = 'warn',
+  Debug = 'debug',
+  Error = 'error'
+}
 
 export interface LoganConfig {
   title?: string;
+  console?: Console;
   logLevel?: LoganLogLevel;
   ignoreLogLevel?: boolean;
 }
