@@ -1,8 +1,8 @@
 import { LoganLogLevel } from '@logan/core';
 
-import { proxyMethod } from './utils';
+import { createProxyFactory } from './create-proxy-factory';
 
-export function LogMethods(logLevel: LoganLogLevel = 'debug'): ClassDecorator {
+export function LoganifyClass(logLevel = LoganLogLevel.Debug): ClassDecorator {
   return (target: Function) => {
     const className = target.name;
     const prototype = target.prototype;
@@ -10,23 +10,25 @@ export function LogMethods(logLevel: LoganLogLevel = 'debug'): ClassDecorator {
 
     for (const methodName of methodNames) {
       const original = prototype[methodName];
-      prototype[methodName] = proxyMethod(logLevel, className, methodName, original);
+      prototype[methodName] = createProxyFactory(logLevel, className, methodName, original);
     }
   };
 }
 
-const hooks = [
+const hooks: readonly string[] = [
+  'constructor',
   'ngOnChanges',
   'ngDoCheck',
   'ngOnInit',
   'ngAfterContentChecked',
   'ngAfterContentInit',
   'ngAfterViewChecked',
-  'ngAfterViewInit'
+  'ngAfterViewInit',
+  'ngOnDestroy'
 ];
 
-function getMethodNames(prototype: any): string[] {
-  // `Set` items are unique and we've got class that extends another
+function getMethodNames(prototype: any): readonly string[] {
+  // `Set` items are unique and if we've got class that extends another
   // class then we would have 2 `constructor` strings
   const methodNames = new Set<string>();
 
@@ -41,9 +43,10 @@ function getMethodNames(prototype: any): string[] {
 
     prototype = Object.getPrototypeOf(prototype);
     // This condition handles cases of class extending
-    // e.g. if we decorate a component that extends some base components
+    // e.g. if we decorate a component that extends some base component
     // `@LogMethods() class MatButton extends Button {}`
   } while (prototype.constructor !== Object);
 
-  return [...methodNames.values()].filter(propertyName => hooks.indexOf(propertyName) === -1);
+  // Remove life cycle methods as we don't need to track them
+  return [...methodNames.values()].filter(methodName => hooks.indexOf(methodName) === -1);
 }

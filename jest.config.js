@@ -1,6 +1,5 @@
 module.exports = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
   testMatch: ['**/src/**/*.spec.ts'],
   cacheDirectory: '<rootDir>/.cache',
   coverageReporters: ['text-summary'],

@@ -20,7 +20,7 @@ export class Logan {
    * collaborate with `this` property. This can benefit more readily from
    * tree shaking
    */
-  static setGlobalTitle: (glotbalTitle: string) => void = setGlobalTitle;
+  static setGlobalTitle: (globalTitle: string) => void = setGlobalTitle;
 
   /**
    * This should be a class property as there can be

@@ -4,8 +4,8 @@ import { isNode, isBrowser } from './utils';
 const nativeConsole = (isNode() && global.console) || window.console;
 
 /**
- * As user is able to provide custom console object that implements `Console`
- * interface that we have to derermine if we have to use native console
+ * As user is able to provide custom console object, that implements `Console`
+ * interface, then we have to derermine if there is a need to use the native console
  * @internal
  */
 export function getNativeConsole(console: Console | undefined): Console {

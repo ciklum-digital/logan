@@ -9,7 +9,7 @@ export class NgLogan extends Logan {
     super(config);
   }
 
-  createLogan(config?: LoganConfig) {
+  createLogan(config?: LoganConfig): Logan {
     return new Logan({ ...this.config, ...config });
   }
 }
