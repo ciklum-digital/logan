@@ -67,6 +67,6 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.ts": ["prettier --write", "lint", "git add"]
+    "*.ts": ["prettier --write", "git add"]
   }
 }
