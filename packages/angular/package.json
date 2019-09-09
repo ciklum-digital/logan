@@ -1,0 +1,34 @@
+{
+  "name": "@logan/angular",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -r -f ./dist",
+    "build": "ng-packagr -p package.json",
+    "test": "echo 1234"
+  },
+  "peerDependency": {
+    "rxjs": ">=6.4.0",
+    "@logan/core": "^0.1.0",
+    "@angular/core": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^8.2.5",
+    "@angular/compiler-cli": "^8.2.5",
+    "@angular/core": "^8.2.5",
+    "ng-packagr": "^5.5.0",
+    "rxjs": "^6.5.3",
+    "tslint": "^5.19.0",
+    "zone.js": "^0.10.2"
+  },
+  "ngPackage": {
+    "lib": {
+      "flagModuleFile": "logan-angular",
+      "entryFile": "src/index.ts",
+      "umdModuleIds": {
+        "@logan/core": "logan-core"
+      }
+    }
+  }
+}
