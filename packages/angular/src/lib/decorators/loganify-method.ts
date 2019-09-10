@@ -8,7 +8,7 @@ export function LoganifyMethod(logLevel = LoganLogLevel.Debug): MethodDecorator 
     propertyKey: string | symbol,
     descriptor: TypedPropertyDescriptor<unknown>
   ) => {
-    const original = descriptor.value as Function;
+    const original = descriptor.value as NonNullable<Function>;
     const className = target.constructor.name;
     const methodName = propertyKey.toString();
     descriptor.value = createProxyFactory(logLevel, className, methodName, original);

@@ -28,25 +28,28 @@ const hooks: readonly string[] = [
 ];
 
 function getMethodNames(prototype: any): readonly string[] {
-  // `Set` items are unique and if we've got class that extends another
-  // class then we would have 2 `constructor` strings
-  const methodNames = new Set<string>();
+  // P.S. do not use `Set` as its iterable methods emits
+  // a lot of ES5 code
+  const methodNames: string[] = [];
 
   do {
     const propertyNames = Object.getOwnPropertyNames(prototype);
 
     for (const propertyName of propertyNames) {
       if (typeof prototype[propertyName] === 'function') {
-        methodNames.add(propertyName);
+        methodNames.push(propertyName);
       }
     }
 
     prototype = Object.getPrototypeOf(prototype);
     // This condition handles cases of class extending
     // e.g. if we decorate a component that extends some base component
-    // `@LogMethods() class MatButton extends Button {}`
+    // `@LoganifyClass() class MatButton extends Button {}`
   } while (prototype.constructor !== Object);
 
   // Remove life cycle methods as we don't need to track them
-  return [...methodNames.values()].filter(methodName => hooks.indexOf(methodName) === -1);
+  // also remove duplicate methods
+  return methodNames
+    .filter((methodName, index, array) => array.indexOf(methodName) === index)
+    .filter(methodName => hooks.indexOf(methodName) === -1);
 }
