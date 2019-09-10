@@ -24,14 +24,14 @@ export function setGlobalTitle(title: string): void {
 }
 
 /**
- * 
+ *
  * @internal
  */
 export function createLoganFactory(
   method: LoganLogLevel,
   title: string,
   logLevel: LoganLogLevel,
-  console: Console | undefined
+  console: Partial<Console> | undefined
 ) {
   if (logLevelValues[method] < logLevelValues[logLevel]) {
     return () => {};
@@ -45,7 +45,9 @@ export function createLoganFactory(
     }
     // This should be used with `apply` instead of direct invokation
     // like `nativeConsole[method](digestedParams)` as it will print array
-    nativeConsole[method].apply(nativeConsole, digestedParams);
+    if (nativeConsole[method]) {
+      nativeConsole[method]!.apply(nativeConsole, digestedParams);
+    }
   };
 }
 

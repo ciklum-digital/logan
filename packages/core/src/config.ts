@@ -8,7 +8,7 @@ const nativeConsole = (isNode() && global.console) || window.console;
  * interface, then we have to derermine if there is a need to use the native console
  * @internal
  */
-export function getNativeConsole(console: Console | undefined): Console {
+export function getNativeConsole(console: Partial<Console> | undefined): Partial<Console> {
   return console || nativeConsole;
 }
 

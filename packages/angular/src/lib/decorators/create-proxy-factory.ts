@@ -12,7 +12,7 @@ export function createProxyFactory(
   methodName: string,
   original: Function
 ): Function {
-  return function(this: any, ...args: any) {
+  return function(this: ThisType<unknown>, ...args: any[]) {
     // If an instance has some property decorated with
     // `@Logger()` then let's use the private logan
     // otherwise use `NgLogan` instance
