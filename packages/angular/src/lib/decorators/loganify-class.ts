@@ -28,7 +28,7 @@ const hooks: readonly string[] = [
 ];
 
 function getMethodNames(prototype: any): readonly string[] {
-  // P.S. do not use `Set` as its iterable methods emits
+  // P.S. do not use `Set` as its iterable methods emit
   // a lot of ES5 code
   const methodNames: string[] = [];
 
