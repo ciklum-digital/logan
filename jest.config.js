@@ -1,9 +1,24 @@
+const path = require('path');
+
+/**
+ * @type {import('@jest/types/build').Config.DefaultOptions}
+ */
 module.exports = {
+  displayName: 'logan',
+  rootDir: path.resolve(),
+  globals: {
+    'ts-jest': {
+      tsConfig: '<rootDir>/tsconfig.json'
+    }
+  },
+  bail: true,
+  clearMocks: true,
+  resetModules: true,
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testMatch: ['**/src/**/*.spec.ts'],
+  cacheDirectory: '<rootDir>/.cache',
   coverageReporters: ['text-summary'],
   coverageDirectory: '<rootDir>/coverage',
-  collectCoverageFrom: ['**/*.ts', '!**/dist/**', '!**/playground/**'],
-  testPathIgnorePatterns: ['/node_modules/', '/playground/'],
-  testMatch: ['**/src/**/*.spec.ts']
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  collectCoverageFrom: ['**/*.ts', '!**/dist/**']
 };

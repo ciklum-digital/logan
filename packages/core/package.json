@@ -1,0 +1,24 @@
+{
+  "name": "@logan/core",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rm -r -f ./dist",
+    "build": "bili"
+  },
+  "devDependencies": {
+    "bili": "^4.8.1",
+    "rollup-plugin-typescript2": "^0.24.0"
+  }
+}

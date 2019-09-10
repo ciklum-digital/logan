@@ -3,6 +3,9 @@
     "tslint-sonarts",
     "tslint-config-airbnb"
   ],
+  "rules": {
+    "trailing-comma": false
+  },
   "rulesDirectory": [
     "node_modules/tslint-origin-ordered-imports-rule/dist"
   ],

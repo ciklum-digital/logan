@@ -4,3 +4,4 @@ dist
 .idea
 .cache
 coverage
+yarn-error.log
