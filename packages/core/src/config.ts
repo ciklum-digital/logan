@@ -20,7 +20,7 @@ export function getLogLevel(
   logLevel: LoganLogLevel | undefined
 ): LoganLogLevel {
   if (ignoreLogLevel) {
-    return LoganLogLevel.Debug;
+    return LoganLogLevel.Log;
   }
 
   if (logLevel) {
@@ -31,5 +31,5 @@ export function getLogLevel(
   // It's safer to type cast to `any` than augmenting
   // global `Window` interface
   const browserLogLevel = isBrowser() && (window as any).config && (window as any).config.logLevel;
-  return nodeLogLevel || browserLogLevel || LoganLogLevel.Debug;
+  return nodeLogLevel || browserLogLevel || LoganLogLevel.Log;
 }

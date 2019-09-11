@@ -26,12 +26,12 @@ describe('@logan/core', () => {
 
   it('should ignore log level', () => {
     // Arrange
-    const spy = jest.spyOn(console, 'debug');
+    const spy = jest.spyOn(console, 'log');
     const logan = new Logan({ ignoreLogLevel: true });
 
     // Act
     logan.setTitle('local title');
-    logan.debug('message');
+    logan.log('message');
 
     try {
       // Assert

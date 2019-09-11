@@ -43,10 +43,9 @@ export function createLoganFactory(
     for (const param of params) {
       digestedParams.push(formatError(param));
     }
-    // This should be used with `apply` instead of direct invokation
-    // like `nativeConsole[method](digestedParams)` as it will print array
-    if (nativeConsole[method]) {
-      nativeConsole[method]!.apply(nativeConsole, digestedParams);
+
+    if (typeof nativeConsole[method] === 'function') {
+      nativeConsole[method]!(...digestedParams);
     }
   };
 }
