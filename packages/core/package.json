@@ -1,7 +1,7 @@
 {
   "name": "@logan/core",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Extended logging library for you JavaScript app",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
