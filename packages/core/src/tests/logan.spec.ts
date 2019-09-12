@@ -126,4 +126,21 @@ describe('@logan/core', () => {
       spy.mockRestore();
     }
   });
+
+  it('should disable Logan', () => {
+    // Arrange
+    const spy = jest.spyOn(console, 'info');
+    const logan = new Logan({ disabled: true });
+
+    // Act
+    logan.setTitle('local title');
+    logan.info('message');
+
+    try {
+      // Assert
+      expect(spy).toHaveBeenCalledTimes(0);
+    } finally {
+      spy.mockRestore();
+    }
+  });
 });

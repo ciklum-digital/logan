@@ -2,7 +2,7 @@ import { LoganLogLevel } from '@logan/core';
 
 import { createProxyFactory } from './create-proxy-factory';
 
-export function LoganifyMethod(logLevel = LoganLogLevel.Debug): MethodDecorator {
+export function EnableMethodLogging(logLevel = LoganLogLevel.Debug): MethodDecorator {
   return (
     target: Object,
     propertyKey: string | symbol,
