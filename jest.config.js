@@ -6,6 +6,7 @@ const path = require('path');
 module.exports = {
   displayName: 'logan',
   rootDir: path.resolve(),
+  modulePathIgnorePatterns: ['dist'],
   globals: {
     'ts-jest': {
       tsConfig: '<rootDir>/tsconfig.json'

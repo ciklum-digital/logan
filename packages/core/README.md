@@ -3,11 +3,11 @@
 > Extended logging library for you JavaScript app
 
 ## Table of contents
-1. [Installation and usage](#installation-and-usage)
+1. [Installation](#installation)
 2. [Log levels](#log-levels)
 3. [Usage and API](#usage-and-api)
 
-## Installation and usage
+## Installation
 
 To install `@logan/core` package run the following command:
 

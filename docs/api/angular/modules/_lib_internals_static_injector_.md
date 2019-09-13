@@ -20,7 +20,7 @@
 
 • **ngLogan**: *[NgLogan](../classes/_lib_ng_logan_.nglogan.md) | null* =  null
 
-*Defined in [lib/internals/static-injector.ts:8](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/internals/static-injector.ts#L8)*
+*Defined in [lib/internals/static-injector.ts:8](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/internals/static-injector.ts#L8)*
 
 ## Functions
 
@@ -28,7 +28,7 @@
 
 ▸ **getNgLogan**(): *never | [NgLogan](../classes/_lib_ng_logan_.nglogan.md)*
 
-*Defined in [lib/internals/static-injector.ts:20](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/internals/static-injector.ts#L20)*
+*Defined in [lib/internals/static-injector.ts:20](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/internals/static-injector.ts#L20)*
 
 **`internal`** 
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **setNgLogan**(`injector`: Injector): *void*
 
-*Defined in [lib/internals/static-injector.ts:13](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/internals/static-injector.ts#L13)*
+*Defined in [lib/internals/static-injector.ts:13](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/internals/static-injector.ts#L13)*
 
 **`internal`** 
 

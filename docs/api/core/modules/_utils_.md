@@ -18,7 +18,7 @@
 
 ▸ **formatError**(`error`: unknown): *unknown*
 
-*Defined in [utils.ts:11](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/utils.ts#L11)*
+*Defined in [utils.ts:11](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/utils.ts#L11)*
 
 **`internal`** 
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **isBrowser**(): *boolean*
 
-*Defined in [utils.ts:38](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/utils.ts#L38)*
+*Defined in [utils.ts:38](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/utils.ts#L38)*
 
 **`internal`** 
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **isEmptyString**(`target`: unknown): *boolean*
 
-*Defined in [utils.ts:4](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/utils.ts#L4)*
+*Defined in [utils.ts:4](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/utils.ts#L4)*
 
 **`internal`** 
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **isNode**(): *boolean*
 
-*Defined in [utils.ts:31](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/utils.ts#L31)*
+*Defined in [utils.ts:31](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/utils.ts#L31)*
 
 Determines if we're in the Node environment, `process` or
 `global` validation is enough

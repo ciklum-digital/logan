@@ -25,4 +25,4 @@
   LoganLogLevel.Error
 ]
 
-*Defined in [logan.ts:5](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L5)*
+*Defined in [logan.ts:5](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L5)*

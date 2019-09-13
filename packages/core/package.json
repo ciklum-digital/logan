@@ -7,15 +7,9 @@
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
   "typings": "dist/index.d.ts",
-  "directories": {
-    "dist": "dist"
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "prebuild": "rm -r -f ./dist",
-    "build": "bili",
+    "build": "bili && cp package.json README.md dist",
     "docs": "typedoc src --options typedoc.json"
   },
   "devDependencies": {

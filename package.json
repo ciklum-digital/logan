@@ -21,7 +21,7 @@
     "ci:test": "yarn test --config=./jest.ci.config.js | npx coveralls",
     "ci:sonar": "npx sonar-scanner",
     "ci:build": "yarn build",
-    "ci:publish": "npx lerna publish"
+    "ci:publish": "npx lerna publish --contents dist"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",

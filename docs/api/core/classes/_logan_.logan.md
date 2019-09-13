@@ -37,7 +37,7 @@ in its prototype methods
 
 \+ **new Logan**(`config`: [LoganConfig](../interfaces/_types_.loganconfig.md)): *[Logan](_logan_.logan.md)*
 
-*Defined in [logan.ts:29](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L29)*
+*Defined in [logan.ts:29](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L29)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type | Default |
 
 • **config**: *[LoganConfig](../interfaces/_types_.loganconfig.md)*
 
-*Defined in [logan.ts:31](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L31)*
+*Defined in [logan.ts:31](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L31)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **debug**: *function*
 
-*Defined in [logan.ts:52](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L52)*
+*Defined in [logan.ts:52](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L52)*
 
 #### Type declaration:
 
@@ -80,7 +80,7 @@ ___
 
 • **error**: *function*
 
-*Defined in [logan.ts:51](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L51)*
+*Defined in [logan.ts:51](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L51)*
 
 #### Type declaration:
 
@@ -99,7 +99,7 @@ ___
 
 • **info**: *function*
 
-*Defined in [logan.ts:49](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L49)*
+*Defined in [logan.ts:49](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L49)*
 
 #### Type declaration:
 
@@ -118,7 +118,7 @@ ___
 
 • **log**: *function*
 
-*Defined in [logan.ts:48](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L48)*
+*Defined in [logan.ts:48](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L48)*
 
 These properties will be created dynamically
 
@@ -139,7 +139,7 @@ ___
 
 • **warn**: *function*
 
-*Defined in [logan.ts:50](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L50)*
+*Defined in [logan.ts:50](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L50)*
 
 #### Type declaration:
 
@@ -158,7 +158,7 @@ ___
 
 ▪ **setGlobalTitle**: *function* =  setGlobalTitle
 
-*Defined in [logan.ts:23](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L23)*
+*Defined in [logan.ts:23](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L23)*
 
 Static properties has to reference external functions if they don't
 collaborate with `this` property. This can benefit more readily from
@@ -180,7 +180,7 @@ Name | Type |
 
 ▸ **getTitle**(): *string*
 
-*Defined in [logan.ts:58](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L58)*
+*Defined in [logan.ts:58](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L58)*
 
 **Returns:** *string*
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **setTitle**(`title`: string): *void*
 
-*Defined in [logan.ts:54](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L54)*
+*Defined in [logan.ts:54](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/logan.ts#L54)*
 
 **Parameters:**
 
