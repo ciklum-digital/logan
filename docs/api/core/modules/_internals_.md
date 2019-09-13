@@ -25,7 +25,7 @@
 
 • **globalTitle**: *string* =  isNode() ? '' : window.name
 
-*Defined in [internals.ts:17](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L17)*
+*Defined in [internals.ts:17](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L17)*
 
 This should be stored internally and shouldn't be exposed
 to the developer
@@ -36,7 +36,7 @@ to the developer
 
 ▸ **createLoganFactory**(`method`: [LoganLogLevel](../enums/_types_.loganloglevel.md), `title`: string, `logLevel`: [LoganLogLevel](../enums/_types_.loganloglevel.md), `console`: Partial‹Console› | undefined, `disabled`: boolean | undefined): *(Anonymous function)*
 
-*Defined in [internals.ts:29](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L29)*
+*Defined in [internals.ts:29](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L29)*
 
 **`internal`** 
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **getTitle**(`title`: string): *string*
 
-*Defined in [internals.ts:56](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L56)*
+*Defined in [internals.ts:56](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L56)*
 
 **`internal`** 
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **setGlobalTitle**(`title`: string): *void*
 
-*Defined in [internals.ts:22](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L22)*
+*Defined in [internals.ts:22](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L22)*
 
 **`internal`** 
 
@@ -94,34 +94,34 @@ Name | Type |
 
 ### ▪ **logLevelValues**: *object*
 
-*Defined in [internals.ts:5](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L5)*
+*Defined in [internals.ts:5](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L5)*
 
 ###  debug
 
 • **debug**: *number* = 20
 
-*Defined in [internals.ts:7](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L7)*
+*Defined in [internals.ts:7](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L7)*
 
 ###  error
 
 • **error**: *number* = 50
 
-*Defined in [internals.ts:10](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L10)*
+*Defined in [internals.ts:10](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L10)*
 
 ###  info
 
 • **info**: *number* = 30
 
-*Defined in [internals.ts:8](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L8)*
+*Defined in [internals.ts:8](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L8)*
 
 ###  log
 
 • **log**: *number* = 20
 
-*Defined in [internals.ts:6](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L6)*
+*Defined in [internals.ts:6](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L6)*
 
 ###  warn
 
 • **warn**: *number* = 40
 
-*Defined in [internals.ts:9](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/internals.ts#L9)*
+*Defined in [internals.ts:9](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/internals.ts#L9)*

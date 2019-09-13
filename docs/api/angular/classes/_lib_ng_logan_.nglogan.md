@@ -39,7 +39,7 @@
 
 *Overrides void*
 
-*Defined in [lib/ng-logan.ts:7](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/ng-logan.ts#L7)*
+*Defined in [lib/ng-logan.ts:7](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/ng-logan.ts#L7)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ Name | Type |
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:3
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:3
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:11
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:11
 
 #### Type declaration:
 
@@ -88,7 +88,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:10
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:10
 
 #### Type declaration:
 
@@ -109,7 +109,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:8
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:8
 
 #### Type declaration:
 
@@ -130,7 +130,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:7
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:7
 
 #### Type declaration:
 
@@ -151,7 +151,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:9
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:9
 
 #### Type declaration:
 
@@ -172,7 +172,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:4
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:4
 
 #### Type declaration:
 
@@ -190,7 +190,7 @@ Name | Type |
 
 ▸ **createLogan**(`config?`: LoganConfig): *Logan*
 
-*Defined in [lib/ng-logan.ts:12](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/ng-logan.ts#L12)*
+*Defined in [lib/ng-logan.ts:12](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/ng-logan.ts#L12)*
 
 **Parameters:**
 
@@ -208,7 +208,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:13
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:13
 
 **Returns:** *string*
 
@@ -220,7 +220,7 @@ ___
 
 *Inherited from void*
 
-Defined in /home/overthesanity/projects/ciklum-digital/logan/packages/core/dist/logan.d.ts:12
+Defined in /home/overthesanity/projects/ciklum-digital/logan/node_modules/@logan/core/dist/logan.d.ts:12
 
 **Parameters:**
 

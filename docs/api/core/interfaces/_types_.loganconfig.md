@@ -23,7 +23,7 @@
 
 • **console**? : *Partial‹Console›*
 
-*Defined in [types.ts:12](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L12)*
+*Defined in [types.ts:12](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L12)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **disabled**? : *undefined | false | true*
 
-*Defined in [types.ts:11](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L11)*
+*Defined in [types.ts:11](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L11)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **ignoreLogLevel**? : *undefined | false | true*
 
-*Defined in [types.ts:14](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L14)*
+*Defined in [types.ts:14](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L14)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **logLevel**? : *[LoganLogLevel](../enums/_types_.loganloglevel.md)*
 
-*Defined in [types.ts:13](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L13)*
+*Defined in [types.ts:13](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L13)*
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 • **title**? : *undefined | string*
 
-*Defined in [types.ts:10](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L10)*
+*Defined in [types.ts:10](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L10)*

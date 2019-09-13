@@ -15,7 +15,7 @@
 
 ▸ **createProxyFactory**(`logLevel`: LoganLogLevel, `className`: string, `methodName`: string, `original`: Function): *Function*
 
-*Defined in [lib/decorators/create-proxy-factory.ts:9](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/decorators/create-proxy-factory.ts#L9)*
+*Defined in [lib/decorators/create-proxy-factory.ts:9](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/decorators/create-proxy-factory.ts#L9)*
 
 **`internal`** 
 

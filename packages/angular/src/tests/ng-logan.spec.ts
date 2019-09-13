@@ -9,8 +9,6 @@ import { NgLoganModule, Loganify, EnableMethodLogging, EnableMethodsLogging } fr
 describe('@logan/angular', () => {
   const console = global.console;
 
-  Logan.setGlobalTitle('global title');
-
   describe('Loganify', () => {
     it('should decorate class property and give access to the Logan', () => {
       // Arrange
@@ -23,7 +21,7 @@ describe('@logan/angular', () => {
 
       // Act
       TestBed.configureTestingModule({
-        imports: [NgLoganModule.forRoot()],
+        imports: [NgLoganModule.forRoot({ globalTitle: 'global title' })],
         declarations: [LoganifiedComponent]
       });
 
@@ -54,7 +52,7 @@ describe('@logan/angular', () => {
 
       // Act
       TestBed.configureTestingModule({
-        imports: [NgLoganModule.forRoot()],
+        imports: [NgLoganModule.forRoot({ globalTitle: 'global title' })],
         declarations: [LoganifiedComponent]
       });
 
@@ -95,7 +93,7 @@ describe('@logan/angular', () => {
 
       // Act
       TestBed.configureTestingModule({
-        imports: [NgLoganModule.forRoot()],
+        imports: [NgLoganModule.forRoot({ globalTitle: 'global title' })],
         declarations: [LoganifiedComponent]
       });
 
@@ -139,7 +137,7 @@ describe('@logan/angular', () => {
 
       // Act
       TestBed.configureTestingModule({
-        imports: [NgLoganModule.forRoot()],
+        imports: [NgLoganModule.forRoot({ globalTitle: 'global title' })],
         declarations: [LoganifiedComponent]
       });
 
@@ -181,7 +179,7 @@ describe('@logan/angular', () => {
 
       // Act
       TestBed.configureTestingModule({
-        imports: [NgLoganModule.forRoot()],
+        imports: [NgLoganModule.forRoot({ globalTitle: 'global title' })],
         declarations: [LoganifiedComponent]
       });
 
@@ -225,7 +223,7 @@ describe('@logan/angular', () => {
 
       // Act
       TestBed.configureTestingModule({
-        imports: [NgLoganModule.forRoot()],
+        imports: [NgLoganModule.forRoot({ globalTitle: 'global title' })],
         declarations: [LoganifiedComponent]
       });
 

@@ -4,7 +4,14 @@ import { LoganConfig } from '@logan/core';
 /**
  * @internal
  */
-export const NG_LOGAN_CONFIG = new InjectionToken<LoganConfig>('NG_LOGAN_CONFIG');
+export interface NgLoganConfig extends LoganConfig {
+  globalTitle?: string;
+}
+
+/**
+ * @internal
+ */
+export const NG_LOGAN_CONFIG = new InjectionToken<NgLoganConfig>('NG_LOGAN_CONFIG');
 
 /**
  * This symbol is used inside instances and protects the user

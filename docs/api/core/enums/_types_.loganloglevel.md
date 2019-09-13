@@ -19,7 +19,7 @@
 
 • **Debug**: = "debug"
 
-*Defined in [types.ts:5](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L5)*
+*Defined in [types.ts:5](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L5)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **Error**: = "error"
 
-*Defined in [types.ts:6](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L6)*
+*Defined in [types.ts:6](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L6)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **Info**: = "info"
 
-*Defined in [types.ts:3](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L3)*
+*Defined in [types.ts:3](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L3)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **Log**: = "log"
 
-*Defined in [types.ts:2](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L2)*
+*Defined in [types.ts:2](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L2)*
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 • **Warn**: = "warn"
 
-*Defined in [types.ts:4](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/types.ts#L4)*
+*Defined in [types.ts:4](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/core/src/types.ts#L4)*

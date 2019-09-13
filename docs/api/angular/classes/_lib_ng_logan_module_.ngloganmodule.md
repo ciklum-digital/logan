@@ -23,7 +23,7 @@
 
 \+ **new NgLoganModule**(`injector`: Injector): *[NgLoganModule](_lib_ng_logan_module_.ngloganmodule.md)*
 
-*Defined in [lib/ng-logan.module.ts:9](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/ng-logan.module.ts#L9)*
+*Defined in [lib/ng-logan.module.ts:9](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/ng-logan.module.ts#L9)*
 
 **Parameters:**
 
@@ -37,14 +37,14 @@ Name | Type |
 
 ### `Static` forRoot
 
-▸ **forRoot**(`config`: LoganConfig): *ModuleWithProviders‹[NgLoganModule](_lib_ng_logan_module_.ngloganmodule.md)›*
+▸ **forRoot**(`config`: [NgLoganConfig](../interfaces/_lib_internals_internals_.ngloganconfig.md)): *ModuleWithProviders‹[NgLoganModule](_lib_ng_logan_module_.ngloganmodule.md)›*
 
-*Defined in [lib/ng-logan.module.ts:14](https://github.com/ciklum-digital/logan/blob/8316871/packages/angular/src/lib/ng-logan.module.ts#L14)*
+*Defined in [lib/ng-logan.module.ts:14](https://github.com/ciklum-digital/logan/blob/af9fe3e/packages/angular/src/lib/ng-logan.module.ts#L14)*
 
 **Parameters:**
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`config` | LoganConfig |  {} |
+`config` | [NgLoganConfig](../interfaces/_lib_internals_internals_.ngloganconfig.md) |  {} |
 
 **Returns:** *ModuleWithProviders‹[NgLoganModule](_lib_ng_logan_module_.ngloganmodule.md)›*
