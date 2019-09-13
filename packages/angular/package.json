@@ -2,11 +2,12 @@
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "@logan/angular",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Angular wrapper for the Logan library",
   "license": "MIT",
   "scripts": {
     "prebuild": "rm -r -f ./dist",
-    "build": "ng-packagr -p package.json"
+    "build": "ng-packagr -p package.json",
+    "docs": "typedoc src --options typedoc.json"
   },
   "peerDependency": {
     "@angular/core": ">=7.0.0",
@@ -19,12 +20,14 @@
     "@angular/core": "^8.2.5",
     "@angular/platform-browser": "^8.2.5",
     "@angular/platform-browser-dynamic": "^8.2.5",
+    "@logan/core": "0.0.0",
+    "core-js": "^3.2.1",
     "jest-preset-angular": "^7.1.1",
     "ng-packagr": "^5.5.0",
-    "@logan/core": "0.0.0",
     "rxjs": "^6.5.3",
+    "tslib": "^1.10.0",
     "tslint": "^5.19.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "~0.9.1"
   },
   "ngPackage": {
     "lib": {

@@ -1,3 +1,5 @@
+![Logan](https://ciklum-digital.github.io/logan/assets/images/icon.svg)
+
 > Extended logging library for you JavaScript app
 
 ## Table of contents

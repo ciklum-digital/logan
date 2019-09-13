@@ -1,8 +1,7 @@
-**[API](README.md)**
-
-[Globals](README.md)
+[API](README.md)
 
 # API
+
 
 ## Index
 

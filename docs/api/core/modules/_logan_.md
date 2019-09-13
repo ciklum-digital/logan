@@ -1,8 +1,7 @@
-**[API](../README.md)**
-
-[Globals](../README.md) › [&quot;logan&quot;](_logan_.md)
+[API](../README.md) › ["logan"](_logan_.md)
 
 # External module: "logan"
+
 
 ## Index
 
@@ -26,4 +25,4 @@
   LoganLogLevel.Error
 ]
 
-*Defined in [logan.ts:5](https://github.com/ciklum-digital/logan/blob/6d38830/packages/core/src/logan.ts#L5)*
+*Defined in [logan.ts:5](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/logan.ts#L5)*

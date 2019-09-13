@@ -3,9 +3,10 @@
   "hideGenerator": true,
   "readme": "none",
   "mode": "modules",
-  "out": "../../docs/api/core",
+  "out": "../../docs/api/angular",
   "theme": "markdown",
   "excludeExternals": true,
   "excludePrivate": true,
+  "ignoreCompilerErrors": true,
   "module": "commonjs"
 }

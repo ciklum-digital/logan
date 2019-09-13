@@ -16,7 +16,7 @@ Logan is an extended logging library for your JavaScript app.
 
 ## API
 
-See our [auto-generated API](api).
+See our generated API docs for [@logan/core](api/core) and [@logan/angular](api/angular).
 
 ## Examples
 
