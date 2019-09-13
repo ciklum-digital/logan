@@ -1,8 +1,7 @@
-**[API](../README.md)**
-
-[Globals](../README.md) › [&quot;types&quot;](_types_.md)
+[API](../README.md) › ["types"](_types_.md)
 
 # External module: "types"
+
 
 ## Index
 

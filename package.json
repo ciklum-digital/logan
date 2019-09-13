@@ -41,6 +41,8 @@
     "tslint-config-airbnb": "^5.11.1",
     "tslint-origin-ordered-imports-rule": "^1.2.2",
     "tslint-sonarts": "^1.9.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-markdown": "^2.2.1",
     "typescript": "3.5.3"
   },
   "husky": {
@@ -69,6 +71,9 @@
     "singleQuote": true
   },
   "lint-staged": {
-    "*.ts": ["prettier --write", "git add"]
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

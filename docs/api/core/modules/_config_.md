@@ -1,8 +1,7 @@
-**[API](../README.md)**
-
-[Globals](../README.md) › [&quot;config&quot;](_config_.md)
+[API](../README.md) › ["config"](_config_.md)
 
 # External module: "config"
+
 
 ## Index
 
@@ -21,7 +20,7 @@
 
 • **nativeConsole**: *Console* =  (isNode() && global.console) || window.console
 
-*Defined in [config.ts:4](https://github.com/ciklum-digital/logan/blob/6d38830/packages/core/src/config.ts#L4)*
+*Defined in [config.ts:4](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/config.ts#L4)*
 
 ## Functions
 
@@ -29,7 +28,7 @@
 
 ▸ **getLogLevel**(`ignoreLogLevel`: boolean | undefined, `logLevel`: [LoganLogLevel](../enums/_types_.loganloglevel.md) | undefined): *[LoganLogLevel](../enums/_types_.loganloglevel.md)*
 
-*Defined in [config.ts:18](https://github.com/ciklum-digital/logan/blob/6d38830/packages/core/src/config.ts#L18)*
+*Defined in [config.ts:18](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/config.ts#L18)*
 
 **`internal`** 
 
@@ -48,7 +47,7 @@ ___
 
 ▸ **getNativeConsole**(`console`: Partial‹Console› | undefined): *Partial‹Console›*
 
-*Defined in [config.ts:11](https://github.com/ciklum-digital/logan/blob/6d38830/packages/core/src/config.ts#L11)*
+*Defined in [config.ts:11](https://github.com/ciklum-digital/logan/blob/8316871/packages/core/src/config.ts#L11)*
 
 As user is able to provide custom console object, that implements `Console`
 interface, then we have to derermine if there is a need to use the native console

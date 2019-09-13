@@ -20,8 +20,7 @@
   },
   "devDependencies": {
     "bili": "^4.8.1",
-    "rollup-plugin-typescript2": "^0.24.0",
-    "typedoc": "^0.15.0",
-    "typedoc-plugin-markdown": "^2.1.12"
+    "rollup": "^1.21.2",
+    "rollup-plugin-typescript2": "^0.24.0"
   }
 }
