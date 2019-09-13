@@ -32,7 +32,13 @@ export class Logan {
     const logLevel = getLogLevel(config.ignoreLogLevel, config.logLevel);
 
     for (const method of methods) {
-      this[method] = createLoganFactory(method, this.title, logLevel, config.console);
+      this[method] = createLoganFactory(
+        method,
+        this.title,
+        logLevel,
+        config.console,
+        config.disabled
+      );
     }
   }
 

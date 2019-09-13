@@ -2,7 +2,7 @@ import { LoganLogLevel } from '@logan/core';
 
 import { createProxyFactory } from './create-proxy-factory';
 
-export function LoganifyClass(logLevel = LoganLogLevel.Debug): ClassDecorator {
+export function EnableMethodsLogging(logLevel = LoganLogLevel.Debug): ClassDecorator {
   return (target: Function) => {
     const className = target.name;
     const prototype = target.prototype;

@@ -24,16 +24,16 @@ export function setGlobalTitle(title: string): void {
 }
 
 /**
- *
  * @internal
  */
 export function createLoganFactory(
   method: LoganLogLevel,
   title: string,
   logLevel: LoganLogLevel,
-  console: Partial<Console> | undefined
+  console: Partial<Console> | undefined,
+  disabled: boolean | undefined
 ) {
-  if (logLevelValues[method] < logLevelValues[logLevel]) {
+  if (logLevelValues[method] < logLevelValues[logLevel] || disabled) {
     return () => {};
   }
 

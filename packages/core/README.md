@@ -92,6 +92,8 @@ logan.info('Publish', { channelHeader, listeners: listeners.length, message });
 // [auto-parts-store::basket-module] Publish > { channelHeader: "@auto-parts-store:get-transmissions:success", listeners: 0, message: Array(10) }
 ```
 
+### Ignoring log level
+
 You can omit specifying `process.env.LOG_LEVEL` or `window.config.logLevel` properties. You can pass the `ignoreLogLevel` when creating `Logan` instance:
 
 ```ts
@@ -100,9 +102,13 @@ const logan = new Logan({ ignoreLogLevel: true });
 
 It's also possible to pass custom log level:
 
+### Local log level
+
 ```ts
 const logan = new Logan({ logLevel: LoganLogLevel.Warn });
 ```
+
+### Custom console object
 
 You can provide custom console object. That's neat if you want to log data with colors. Given the following example:
 
@@ -120,4 +126,12 @@ class ConsoleWithColors implements Partial<Console> {
 }
 
 const logan = new Logan({ console: new ConsoleWithColors() });
+```
+
+### Disable logging
+
+You can disable logging in the production environment. This can be done by providing the `disabled` option:
+
+```ts
+const logan = new Logan({ disabled: !!process.env.PRODUCTION });
 ```

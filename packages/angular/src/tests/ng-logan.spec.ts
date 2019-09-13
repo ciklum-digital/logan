@@ -4,7 +4,7 @@ import { TestBed } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { Logan, LoganLogLevel } from '@logan/core';
 
-import { NgLoganModule, Loganify, LoganifyMethod, LoganifyClass } from '..';
+import { NgLoganModule, Loganify, EnableMethodLogging, EnableMethodsLogging } from '..';
 
 describe('@logan/angular', () => {
   const console = global.console;
@@ -39,14 +39,14 @@ describe('@logan/angular', () => {
     });
   });
 
-  describe('LoganifyMethod', () => {
+  describe('EnableMethodLogging', () => {
     it('should decorate method and print parameters and result', () => {
       // Arrange
       const spy = jest.spyOn(console, 'log');
 
       @Component({ template: '' })
       class LoganifiedComponent {
-        @LoganifyMethod(LoganLogLevel.Log)
+        @EnableMethodLogging(LoganLogLevel.Log)
         sum(number1: number, number2: number) {
           return number1 + number2;
         }
@@ -87,7 +87,7 @@ describe('@logan/angular', () => {
       class LoganifiedComponent {
         @Loganify({ title: 'local title' }) logan!: Logan;
 
-        @LoganifyMethod(LoganLogLevel.Log)
+        @EnableMethodLogging(LoganLogLevel.Log)
         cube(number: number): number {
           return number ** 3;
         }
@@ -124,12 +124,12 @@ describe('@logan/angular', () => {
     });
   });
 
-  describe('LoganifyClass', () => {
+  describe('EnableMethodsLogging', () => {
     it('should decorate class and proxy method calls', () => {
       // Arrange
       const spy = jest.spyOn(console, 'log');
 
-      @LoganifyClass(LoganLogLevel.Log)
+      @EnableMethodsLogging(LoganLogLevel.Log)
       @Component({ template: '' })
       class LoganifiedComponent {
         square(number: number): number {
@@ -169,7 +169,7 @@ describe('@logan/angular', () => {
       // Arrange
       const spy = jest.spyOn(console, 'log');
 
-      @LoganifyClass(LoganLogLevel.Log)
+      @EnableMethodsLogging(LoganLogLevel.Log)
       @Component({ template: '' })
       class LoganifiedComponent {
         @Loganify({ title: 'local title' }) logan!: Logan;
@@ -219,7 +219,7 @@ describe('@logan/angular', () => {
         }
       }
 
-      @LoganifyClass(LoganLogLevel.Log)
+      @EnableMethodsLogging(LoganLogLevel.Log)
       @Component({ template: '' })
       class LoganifiedComponent extends BaseLoganifiedComponent {}
 

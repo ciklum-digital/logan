@@ -15,10 +15,13 @@
   ],
   "scripts": {
     "prebuild": "rm -r -f ./dist",
-    "build": "bili"
+    "build": "bili",
+    "docs": "typedoc src --options typedoc.json"
   },
   "devDependencies": {
     "bili": "^4.8.1",
-    "rollup-plugin-typescript2": "^0.24.0"
+    "rollup-plugin-typescript2": "^0.24.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-markdown": "^2.1.12"
   }
 }

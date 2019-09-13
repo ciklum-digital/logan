@@ -8,6 +8,7 @@ export const enum LoganLogLevel {
 
 export interface LoganConfig {
   title?: string;
+  disabled?: boolean;
   console?: Partial<Console>;
   logLevel?: LoganLogLevel;
   ignoreLogLevel?: boolean;
