@@ -16,7 +16,7 @@
     "lint:fix": "yarn lint --fix",
     "test": "npx jest --runInBand --silent",
     "test:watch": "npx jest --runInBand --watch",
-    "build": "npx lerna run build",
+    "build": "node scripts/build",
     "ci:lint": "yarn lint",
     "ci:test": "yarn test --config=./jest.ci.config.js | npx coveralls",
     "ci:sonar": "npx sonar-scanner",
@@ -28,6 +28,7 @@
     "@commitlint/config-conventional": "^8.1.0",
     "@types/jest": "^24.0.18",
     "coveralls": "^3.0.6",
+    "fs-extra": "^8.1.0",
     "husky": "^3.0.5",
     "jest": "^24.9.0",
     "lerna": "^3.16.4",
@@ -43,7 +44,8 @@
     "tslint-sonarts": "^1.9.0",
     "typedoc": "^0.15.0",
     "typedoc-plugin-markdown": "^2.2.1",
-    "typescript": "3.5.3"
+    "typescript": "3.5.3",
+    "yargs": "^14.0.0"
   },
   "husky": {
     "hooks": {
