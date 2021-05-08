@@ -23,7 +23,7 @@
     "@logan/core": "0.0.0",
     "core-js": "^3.2.1",
     "jest-preset-angular": "^7.1.1",
-    "ng-packagr": "^5.5.0",
+    "ng-packagr": "^10.1.1",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",
     "tslint": "^5.19.0",
